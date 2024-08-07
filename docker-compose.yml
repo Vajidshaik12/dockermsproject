@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: vajidshiak/mahimoviess1:latest
+    image: vajidshiak/movies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: vajidshaik/mahitrain:latest
+    image: vajidshaik/train:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: vajidshaik/mahidth:latest
+    image: vajidshaik/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: vajidshaik/mahirecharge:latest
+    image: vajidshaik/recharge:latest
     ports:
       - "84:80"
     deploy:
